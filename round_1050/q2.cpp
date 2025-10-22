@@ -1,18 +1,16 @@
 #include "iostream"
 using namespace std;
-
 void solve() {
-  int n, m;
+  int n, m, x, y;
+  cin >> n >> m >> x >> y;
 
-  cin >> n >> m;
-
-  int res = 0;
-
-  for (int i = 0; i < n; i++) {
-    int a, b;
+  for (int i = 0; i < n + m; i++) {
+    int a;
+    cin >> a;
   }
-}
 
+  cout << n + m << '\n';
+}
 int main() {
   int t;
   cin >> t;
