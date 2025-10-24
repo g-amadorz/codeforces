@@ -5,14 +5,28 @@ void solve() {
   int n, k;
   cin >> n >> k;
 
-  if (k == n * n - 1)
+  if (k == (n * n) - 1)
     return void(cout << "NO" << '\n');
 
   cout << "YES" << '\n';
 
-  vector<vector<int>> grid;
+  for (int i = 0; i < n; i++) {
 
-  for (int i = 0; i < k; i++) {
+    string s = "";
+
+    for (int l = 0; l < n; l++) {
+      if (k > 0) {
+        s += "U";
+        k--;
+      } else if (i != n - 1) {
+        s += "D";
+      } else if (l == n - 1 && i == n - 1) {
+        s += "L";
+      } else {
+        s += "R";
+      }
+    }
+    cout << s << '\n';
   }
 }
 int main() {
