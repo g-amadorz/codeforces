@@ -1,15 +1,15 @@
 #include "iostream"
 using namespace std;
-void solve() {
-  int n, m, x, y;
-  cin >> n >> m >> x >> y;
 
-  for (int i = 0; i < n + m; i++) {
-    int a;
-    cin >> a;
+void solve() {
+  int n;
+  cin >> n;
+
+  if (n % 4 == 0) {
+    return void(cout << "BOB" << '\n');
   }
 
-  cout << n + m << '\n';
+  cout << "ALICE" << '\n';
 }
 int main() {
   int t;

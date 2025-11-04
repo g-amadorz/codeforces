@@ -1,16 +1,23 @@
 #include "iostream"
 using namespace std;
-
 void solve() {
   int n;
+
   cin >> n;
 
-  if (n % 3) {
-    cout << (3 - (n % 3)) << endl;
-  } else {
-    cout << 0 << endl;
+  for (int i = n; i >= 1; i--) {
+    cout << i << ' ';
   }
+
+  cout << n;
+
+  for (int i = 1; i < n; i++) {
+    cout << ' ' << i;
+  }
+
+  cout << '\n';
 }
+
 int main() {
   int t;
   cin >> t;
